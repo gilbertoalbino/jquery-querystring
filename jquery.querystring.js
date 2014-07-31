@@ -1,3 +1,12 @@
+/*
+Example:
+    $.load('/index.php'+ $.queryString({ year: 2014, make : 'Nissan', color : 'red'}, '?')
+
+    Will return:
+        /index.php?year=2014&make=Nissan&color=red
+        
+NOTE: This utility function doesn't encodes values.
+*/
 (function($) {
     $.queryString = function(params, start) {
         if (params !== undefined) {
